@@ -48,18 +48,18 @@
 
               // Font for technologies used and the coming soon button
               h4 {
-                display: flex;
+                align-items: center;
                 color: $greyFontColor;
+                display: flex;
                 font-size: 1rem;
                 margin-top: 1rem;
-                align-items: center;
 
                 span {
-                  display: flex;
                   background-color: white;
+                  display: flex;
                   height: 0.05rem;
-                  width: 0.9rem;
                   margin: 0 0.5rem;
+                  width: 0.9rem;
                 }
               }
 
@@ -76,18 +76,19 @@
                 // Additional styles for coming soon button text
                 h4 {
                   background-color: grey;
-                  color: white;
                   border-radius: 15px;
+                  color: white;
+                  font-size: 1rem;
                   padding: 0.25rem 0.5rem;
                   margin-top: 0.5rem;
                   text-align: center;
+                  user-select: none;
                   // Make text nonhighlightable/clickable
                   -webkit-touch-callout: none;
                   -webkit-user-select: none;
                   -khtml-user-select: none;
                   -moz-user-select: none;
                   -ms-user-select: none;
-                  user-select: none;
                 }
               }
             }
@@ -95,11 +96,10 @@
 
           .carousel-item-content {
             // background-color: blue;
-            height: 33rem;
-            display: flex;
+            align-items: center;
             background: linear-gradient(#0f2027, #203a43, #2c5364);
             display: flex;
-            align-items: center;
+            height: 33rem;
             justify-content: center;
             overflow: hidden;
             position: relative;

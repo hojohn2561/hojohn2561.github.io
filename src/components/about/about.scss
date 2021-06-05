@@ -54,16 +54,15 @@
         color: $greyFontColor;
         width: 100%;
         margin-bottom: 1rem;
-      }
 
-      @media screen and (min-width: 720px) {
-        width: 90%;
+        @media screen and (min-width: 720px) {
+          width: 90%;
+        }
       }
 
       .skills-display {
         justify-content: center;
         align-content: center;
-        width: 90%;
 
         // A row of skils
         .skill-row {
@@ -95,8 +94,8 @@
             }
 
             h4 {
-              margin-top: 0.25rem;
               font-size: 1rem;
+              margin-top: 0.25rem;
               color: white;
             }
           }

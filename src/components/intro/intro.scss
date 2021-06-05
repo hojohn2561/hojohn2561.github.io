@@ -8,9 +8,9 @@
   background-position: center center;
   background-color: $backgroundColor;
   display: flex;
+  flex-direction: column;
   height: 100vh;
   padding: 0 7%; // Top/bottom right/left
-  flex-direction: column;
   justify-content: center;
 
   .introduction-container {

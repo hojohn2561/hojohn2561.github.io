@@ -1,17 +1,16 @@
 @import "../../global.scss";
 
 .menu {
-  position: fixed;
-  height: 100vh;
-  width: 100vw;
-  right: -100vw;
-  transition: all 0.35s ease;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  height: 100vh;
   justify-content: center;
+  position: fixed;
+  right: -100vw;
+  transition: all 0.35s ease;
+  width: 100vw;
   z-index: 9; // Menu should appear above site content, but below navbar
-  transition: all 0.3s ease;
 
   &.active {
     background-color: $primaryColor;
@@ -26,9 +25,9 @@
     padding: 0;
 
     li {
-      transition: all 0.2s ease;
       cursor: pointer;
       margin-bottom: 1rem;
+      transition: all 0.2s ease;
 
       &:hover {
         color: white;

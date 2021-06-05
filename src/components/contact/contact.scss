@@ -8,16 +8,16 @@
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
+  height: 55vh;
   padding: 4% 7%; // Top/bottom right/left
-  height: 55vh; // -70px for navbar height
 
   .contact-me {
     display: flex;
     flex-direction: column;
 
     a {
-      cursor: pointer;
       color: $primaryColor;
+      cursor: pointer;
       text-decoration: none;
     }
   }

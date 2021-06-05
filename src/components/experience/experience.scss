@@ -7,15 +7,15 @@
   padding: 4% 7%; // Top/bottom right/left
 
   .my-experiences {
-    width: 100%;
     display: flex;
     flex-wrap: wrap; // To make responsive
     justify-content: center;
+    width: 100%;
 
     .experience-card-container {
       height: 19rem;
-      width: 19rem;
       margin: 4%; // Margin to separate cards from each other
+      width: 19rem;
 
       // Different phone image size depending on size of screen (this is for computer)
       @media screen and (min-width: 720px) {
@@ -34,19 +34,19 @@
 
         .experience-card-front,
         .experience-card-back {
+          height: 100%;
+          width: 100%;
           position: absolute;
           padding-top: 0.5rem;
           padding-bottom: 0.5rem;
-          height: 100%;
-          width: 100%;
-          -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+          -webkit-backface-visibility: hidden;
         }
 
         .experience-card-front {
-          text-align: center;
-          // background: linear-gradient(#0f0c29, #302b63, #24243e);
           background: linear-gradient(#4a00e0, #8e2de2);
+          // background: linear-gradient(#0f0c29, #302b63, #24243e);
+          text-align: center;
 
           .experience-header {
             display: "flex";
@@ -65,8 +65,8 @@
         }
 
         .experience-card-back {
-          background: linear-gradient(#24243e, #203a43, #0f2027);
           color: white;
+          background: linear-gradient(#24243e, #203a43, #0f2027);
           transform: rotateY(180deg);
 
           h3 {
