@@ -37,13 +37,13 @@
               text-align: left;
               width: 95%;
 
-              h2 {
-                text-decoration: underline;
-              }
-
               // Different phone image size depending on size of screen (this is for computer)
               @media screen and (min-width: 720px) {
                 width: 50%;
+              }
+
+              h2 {
+                text-decoration: underline;
               }
 
               // Font for technologies used and the coming soon button
