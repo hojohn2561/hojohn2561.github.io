@@ -195,14 +195,6 @@ export default function Projects() {
                     <h4>
                       React <span /> Node.js <span /> Firebase
                     </h4>
-                    {/* <div className="technologies-used-container">
-                      {projects[0].technologiesUsed.map((technologyUsed) => (
-                        <h4 key={technologyUsed}>{technologyUsed}</h4>
-                      ))}
-                    </div> 
-                    <div className="app-stores-container">
-                      <h4>Coming soon to Google Play and Apple App store</h4>
-                    </div> */}
                   </div>
                 </div>
               </div>
