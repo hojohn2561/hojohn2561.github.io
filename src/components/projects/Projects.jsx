@@ -170,34 +170,47 @@ export default function Projects() {
       {/* ================================================== TCG Assistant ================================================== */}
       <div className="my-projects">
         <div className="project">
-          <div className="project-overview">
-            <h2>{projects[0].name}</h2>
-            <div className="technologies-used-container">
-              {projects[0].technologiesUsed.map((technologyUsed) => (
-                <h4 key={technologyUsed}>{technologyUsed}</h4>
-              ))}
-            </div>
-            <div className="app-stores-container">
-              <h4>Coming soon to Google Play and Apple App store</h4>
-            </div>
-          </div>
           <div className="project-carousel">
             <Carousel
               showStatus={false}
               showThumbs={false}
-              autoPlay
+              showIndicators={false}
               emulateTouch // Enable swipe on non-touch screens when swipeable is true.
               infiniteLoop // Going after the last item will move back to the first slide
               swipeable
-              interval={7500} // Interval for autoPlay (in milliseconds)
-              transitionTime={850} // Duration of the animation of changing slides.
             >
+              <div className="carousel-item-container">
+                <div className="carousel-title-content">
+                  <div className="project-overview">
+                    <h2>{projects[0].name}</h2>
+                    <h4>
+                      A cross-platform mobile app that allows you to track and
+                      expand your trading card collection like never before.
+                      Simple ways to add and remove cards to and from your
+                      collection, add cards to your wishlist, get alerted when a
+                      card reaches your set price, view a card's price history,
+                      discover cards based on categories, and more.
+                    </h4>
+                    <h4>Coming soon to Google Play and Apple App store.</h4>
+                    <h4>
+                      React <span /> Node.js <span /> Firebase
+                    </h4>
+                    {/* <div className="technologies-used-container">
+                      {projects[0].technologiesUsed.map((technologyUsed) => (
+                        <h4 key={technologyUsed}>{technologyUsed}</h4>
+                      ))}
+                    </div> 
+                    <div className="app-stores-container">
+                      <h4>Coming soon to Google Play and Apple App store</h4>
+                    </div> */}
+                  </div>
+                </div>
+              </div>
               {projects[0].features.map((feature) => (
                 <div
                   className="carousel-item-container"
                   key={feature.explanation}
                 >
-                  {/* <p>{feature.explanation}</p> */}
                   <div className="carousel-item-content">
                     {feature.demo}
                     <div className="carousel-item-description-container">
