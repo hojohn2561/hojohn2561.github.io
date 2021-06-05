@@ -1,0 +1,27 @@
+@import "../../global.scss";
+
+.intro-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("background.jpg"); // Background image with dark tint
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: $backgroundColor;
+  display: flex;
+  height: 100vh;
+  padding: 0 7%; // Top/bottom right/left
+  flex-direction: column;
+  justify-content: center;
+
+  .introduction-container {
+    width: 100%;
+  }
+
+  .blurb-container {
+    width: 35%;
+
+    h3 {
+      color: $greyFontColor;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@import "../../global.scss";
+
+.contact-container {
+  // background-color: $backgroundColor;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("hello.jpg"); // Background image with dark tint
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  padding: 4% 7%; // Top/bottom right/left
+  height: calc(100vh - 70px); // -70px for navbar height
+
+  .contact-me {
+    display: flex;
+    flex-direction: column;
+
+    a {
+      cursor: pointer;
+      color: $primaryColor;
+      text-decoration: none;
+    }
+  }
+}

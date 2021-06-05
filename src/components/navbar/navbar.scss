@@ -1,0 +1,72 @@
+@import "../../global.scss";
+
+.navbar {
+  // On web: justify-content ==> main axis ==> horizontal, align-items ==> secondary axis ==> vertical... Opposite from mobile
+  align-items: center; // Align content center vertically
+  //  background-color: lightblue; // Color of the navbar, but will go with none here to make it transparent
+  color: white; // Default color (for text) in the navbar (when not active, i.e., clicked on)
+  display: flex;
+  height: 70px;
+  justify-content: space-between; // Horizontal, should be even space between the content
+  position: fixed; // Fix navbar position at top
+  top: 0;
+  width: 100vw; // Should go across the entire width of the screen
+  z-index: 10; // Navbar should always be visible, so give it the highest z-index
+  transition: all 0.4s ease; // Navbar color transition should be smooth
+
+  .left-content {
+    padding-left: 2%;
+
+    .logo {
+      cursor: pointer;
+      font-size: 2.25rem;
+      font-weight: 700;
+      font-family: "Kaushan Script", cursive;
+    }
+  }
+
+  .right-content {
+    padding-right: 2%;
+
+    .menu-botton {
+      display: flex;
+      flex-direction: column;
+      height: 25px;
+      width: 35px;
+      justify-content: space-between;
+      cursor: pointer;
+
+      span {
+        background-color: white;
+        width: 100%;
+        height: 3px;
+        transform-origin: left; // So that transforms don't start from center/origin, they start on left. So can properly make the cross (X)
+        transition: all 0.5s ease; // So all transitions (transform rotate and opacity) takes 1 seconds
+      }
+    }
+  }
+
+  // Styling for when navbar is active (clicked),
+  &.active {
+    // Color of navbar (background-color) and color of text changes
+    background-color: $primaryColor;
+    color: $greyFontColor;
+
+    // Hamburger menu icon transforms into X, as well as changes color
+    .menu-botton {
+      span {
+        &:first-child {
+          background-color: $greyFontColor;
+          transform: rotate(40deg);
+        }
+        &:nth-child(2) {
+          opacity: 0;
+        }
+        &:last-child {
+          background-color: $greyFontColor;
+          transform: rotate(-40deg);
+        }
+      }
+    }
+  }
+}

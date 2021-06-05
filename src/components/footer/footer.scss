@@ -1,0 +1,25 @@
+.footer-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+
+  .icon-row-container {
+    display: flex;
+    height: 40%;
+
+    .logo {
+      cursor: pointer;
+      height: 3vh;
+      margin: 0 0.7rem;
+    }
+  }
+
+  .copyright-text {
+    align-items: flex-end;
+    color: white;
+    display: flex;
+    font-size: 0.75rem;
+    justify-content: flex-end;
+  }
+}

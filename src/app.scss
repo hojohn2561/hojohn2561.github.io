@@ -1,0 +1,37 @@
+@import "./global.scss";
+
+.app {
+  background: $backgroundColor;
+  scroll-behavior: smooth;
+
+  // All h1 on website should have these properties. It is consistent throughout.
+  h1 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 1.25%;
+  }
+
+  h2 {
+    color: white;
+    font-size: 1.7rem;
+  }
+
+  h3 {
+    color: white;
+    font-size: 1.15rem;
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .fade-in {
+    animation: fade-in 3s;
+  }
+}

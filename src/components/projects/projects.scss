@@ -1,0 +1,211 @@
+@import "../../global.scss";
+
+.projects-container {
+  align-items: center;
+  //   background-color: $backgroundColor;
+  display: flex;
+  flex-direction: column;
+  //   height: 100vh; // Want a variable height so design is responsive, so omitting fixed height
+  padding: 4% 7%; // Top/bottom right/left
+
+  .my-projects {
+    display: flex;
+    width: 100%;
+
+    .project {
+      height: 47rem;
+      width: 100%;
+      // background-color: green;
+
+      .project-overview {
+        // background: linear-gradient(#0f0c29, #302b63, #24243e);
+        background: linear-gradient(#4a00e0, #8e2de2);
+        padding: 0.75rem;
+        z-index: 2; // The overview should be displayed in front of the carousel
+        text-align: center;
+
+        // If screen is >720px, define width here. Otherwise, width fills parent (100%). Because if width >720px, don't need overview to have 100% width.
+        @media screen and (min-width: 720px) {
+        }
+
+        .dates-worked {
+          font-style: italic;
+        }
+
+        // Font for technologies used and the coming soon button
+        h4 {
+          color: $greyFontColor;
+          font-size: 0.9rem;
+        }
+
+        .technologies-used-container {
+          display: flex;
+          justify-content: space-evenly;
+        }
+
+        .app-stores-container {
+          display: flex;
+          justify-content: center;
+
+          // Additional styles for coming soon button text
+          h4 {
+            background-color: grey;
+            color: white;
+            font-size: 0.75rem;
+            border-radius: 20px;
+            padding: 0.4rem;
+            margin-top: 0.5rem;
+            text-align: center;
+            // Make text nonhighlightable/clickable
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+          }
+        }
+      }
+
+      .project-carousel {
+        // height: 33rem;
+        // background-color: orchid;
+
+        // Carousel dots depend on carousel item size, so make it bigger and actual content smaller to display dots outside of the content
+        .carousel-item-container {
+          height: 35rem;
+
+          .carousel-item-content {
+            // background-color: blue;
+            height: 33rem;
+            display: flex;
+            background: linear-gradient(#1fa2ff, #12d8fa, #a6ffcb);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+
+            .phone-screenshot {
+              height: 15rem;
+              object-fit: contain;
+              position: absolute;
+
+              // Different phone image size depending on size of screen (this is for computer)
+              @media screen and (min-width: 720px) {
+                height: 33rem;
+              }
+
+              &.diagonal-1 {
+                transform-origin: center;
+                transform: rotate(25deg);
+              }
+              &.diagonal-2 {
+                transform-origin: center;
+                transform: translateX(-8.5rem) rotate(25deg); // Translate first before rotate so that X goes exactly horizontal/vertical
+
+                // Different phone image size depending on size of screen (this is for computer)
+                @media screen and (min-width: 720px) {
+                  transform: translateX(-20rem) rotate(25deg);
+                }
+              }
+              &.diagonal-3 {
+                transform-origin: center;
+                transform: translateX(10rem) translateY(-4rem) rotate(25deg); // Translate first before rotate so that X goes exactly horizontal/vertical
+
+                // Inverse of diagonal-6
+                @media screen and (min-width: 720px) {
+                  transform: translateX(29rem) translateY(22rem) rotate(25deg);
+                }
+              }
+
+              &.diagonal-4 {
+                transform-origin: center;
+                transform: translateX(3.5rem) translateY(10rem) rotate(25deg);
+
+                @media screen and (min-width: 720px) {
+                  transform: translateX(24rem) translateY(-10rem) rotate(25deg);
+                }
+              }
+              &.diagonal-5 {
+                transform-origin: center;
+                transform: translateX(-2rem) translateY(-14rem) rotate(25deg);
+
+                @media screen and (min-width: 720px) {
+                  transform: translateX(9.5rem) translateY(21rem) rotate(25deg);
+                }
+              }
+              &.diagonal-6 {
+                transform-origin: center;
+                transform: translateX(-6.5rem) translateY(14rem) rotate(25deg);
+
+                // Inverse of diagonal-3
+                @media screen and (min-width: 720px) {
+                  transform: translateX(-29rem) translateY(-22rem) rotate(25deg);
+                }
+              }
+
+              // Phone 1 of 2 display
+              &.phone-1-2 {
+                transform: translateX(-4.5rem) rotateY(15deg) skewY(-5deg);
+
+                @media screen and (min-width: 720px) {
+                  transform: translateX(-10rem) rotateY(15deg) skewY(-5deg);
+                }
+              }
+
+              // Phone 2 of 2 display
+              &.phone-2-2 {
+                transform: translateX(4.5rem) rotateY(15deg) skewY(5deg);
+
+                @media screen and (min-width: 720px) {
+                  transform: translateX(10rem) rotateY(15deg) skewY(5deg);
+                }
+              }
+
+              // Phone 1 of 3 display
+              &.phone-1-3 {
+              }
+
+              // Phone 2 of 3 display
+              &.phone-2-3 {
+                transform: translateX(-7.5rem) rotateY(15deg) skewY(-5deg);
+
+                @media screen and (min-width: 720px) {
+                  transform: translateX(-20rem) rotateY(15deg) skewY(-5deg);
+                }
+              }
+              // Phone 3 of 3 display
+              &.phone-3-3 {
+                transform: translateX(7.5rem) rotateY(15deg) skewY(5deg);
+
+                @media screen and (min-width: 720px) {
+                  transform: translateX(20rem) rotateY(15deg) skewY(5deg);
+                }
+              }
+            }
+
+            .carousel-item-description-container {
+              z-index: 5;
+              color: white;
+              height: 100%;
+              display: flex;
+              flex: 1;
+              justify-content: center;
+              align-items: flex-end;
+
+              .carousel-item-description {
+                font-size: 1rem;
+                font-weight: 500;
+                display: flex;
+                flex: 1;
+                background-color: rgba($color: #000000, $alpha: 0.85);
+                justify-content: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
