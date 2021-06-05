@@ -46,27 +46,28 @@ export default function About() {
     <div className="about-container" id="about">
       <h1>About Me.</h1>
       <div className="about-me">
-        <div className="headshot-container">
-          <img className="headshot" src="assets/headshot.jpg" alt="" />
-        </div>
-
-        <div className="info-container">
-          <p>
-            Hi! My name is John and I graduated from Drexel University with a
-            Bachelor's degree in Computer Science in 2020. During my time there,
-            I've had a co-op at{" "}
-            <Link
-              linkTo="https://www.upenn.edu/"
-              text="a prestigeous university"
-            />{" "}
-            and two at{" "}
-            <Link
-              linkTo="https://corporate.comcast.com/"
-              text="a huge corporation"
-            />
-            , all of which gave me the opportunity to learn so much about
-            front-end and back-end development!
-          </p>
+        <div className="about-me-intro">
+          <div className="info-container">
+            <p>
+              Hi! My name is John and I graduated from Drexel University with a
+              Bachelor's degree in Computer Science in 2020. During my time
+              there, I've had a co-op at{" "}
+              <Link
+                linkTo="https://www.upenn.edu/"
+                text="a prestigeous university"
+              />{" "}
+              and two at{" "}
+              <Link
+                linkTo="https://corporate.comcast.com/"
+                text="one of the largest media conglomerates"
+              />
+              , all of which gave me the opportunity to gain experience and
+              learn so much about front-end and back-end development!
+            </p>
+          </div>
+          <div className="headshot-container">
+            <img className="headshot" src="assets/headshot.jpg" alt="" />
+          </div>
         </div>
 
         <div className="skills">
