@@ -72,6 +72,13 @@ export default function About() {
 
         <div className="skills">
           <h2 className="skills-subheader-text">Skills</h2>
+          <div className="info-container">
+            <p>
+              My academic and professional experiences so far have allowed me to
+              work with a wide variety of programming languages and software, so
+              I'm always prepared.
+            </p>
+          </div>
           <div className="skills-display">
             <div className="skill-row">
               <div className="skill-container">

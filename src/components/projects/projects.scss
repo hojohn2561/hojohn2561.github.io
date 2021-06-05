@@ -1,7 +1,6 @@
 @import "../../global.scss";
 
 .projects-container {
-  align-items: center;
   //   background-color: $backgroundColor;
   display: flex;
   flex-direction: column;
@@ -14,7 +13,6 @@
     width: 100%;
 
     .project {
-      height: 47rem;
       width: 95%;
 
       .project-carousel {
