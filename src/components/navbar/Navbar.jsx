@@ -11,7 +11,7 @@ export default function Navbar({ isMenuOpen, setIsMenuOpen }) {
         </a>
       </div>
 
-      <div className="right-content  fade-in">
+      <div className="right-content">
         <div className="menu-botton" onClick={() => setIsMenuOpen(!isMenuOpen)}>
           <span className="line1"></span>
           <span className="line2"></span>

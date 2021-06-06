@@ -9,7 +9,7 @@
   position: fixed;
   right: -100vw;
   transition: all 0.35s ease;
-  width: 99vw;
+  width: 100vw;
   z-index: 9; // Menu should appear above site content, but below navbar
 
   &.active {
