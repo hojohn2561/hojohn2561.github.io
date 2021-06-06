@@ -51,13 +51,14 @@ export default function About() {
       <div className="about-me-intro-container">
         <ScrollAnimation
           animateOnce
-          animateIn="animate__animated animate__slideInUp"
+          animateIn="animate__animated animate__slideInLeft"
         >
           <h1>About Me.</h1>
         </ScrollAnimation>
         <ScrollAnimation
           animateOnce
           animateIn="animate__animated animate__slideInUp"
+          delay={500}
         >
           <div className="about-me-intro">
             <div className="about-me-paragraph-container">
@@ -83,7 +84,7 @@ export default function About() {
             <div className="headshot-container">
               <img
                 className="headshot"
-                src="assets/headshot.jpg"
+                src="assets/headshot.png"
                 alt="Headshot"
               />
             </div>
@@ -94,6 +95,7 @@ export default function About() {
           <ScrollAnimation
             animateOnce
             animateIn="animate__animated animate__slideInUp"
+            delay={500}
           >
             <h2>Skills</h2>
             <div className="skills-paragraph-container">
@@ -106,12 +108,6 @@ export default function About() {
                 and Python.
               </p>
             </div>
-          </ScrollAnimation>
-
-          <ScrollAnimation
-            animateOnce
-            animateIn="animate__animated animate__slideInUp"
-          >
             <div className="skills-display">
               <div className="skill-row">
                 <div className="skill-container">

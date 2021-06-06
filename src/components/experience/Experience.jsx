@@ -47,7 +47,7 @@ export default function Experience() {
     <div className="experiences-container" id="experience">
       <ScrollAnimation
         animateOnce
-        animateIn="animate__animated animate__slideInUp"
+        animateIn="animate__animated animate__slideInLeft"
       >
         <h1>My Experience.</h1>
       </ScrollAnimation>
@@ -55,6 +55,7 @@ export default function Experience() {
       <ScrollAnimation
         animateOnce
         animateIn="animate__animated animate__slideInUp"
+        delay={500}
       >
         <div className="my-experiences">
           {experiences.map((experience) => (

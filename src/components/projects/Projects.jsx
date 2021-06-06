@@ -164,7 +164,7 @@ export default function Projects() {
     <div className="projects-container" id="projects">
       <ScrollAnimation
         animateOnce
-        animateIn="animate__animated animate__slideInUp"
+        animateIn="animate__animated animate__slideInLeft"
       >
         <h1>My Work.</h1>
       </ScrollAnimation>
@@ -173,6 +173,7 @@ export default function Projects() {
       <ScrollAnimation
         animateOnce
         animateIn="animate__animated animate__slideInUp"
+        delay={500}
       >
         <div className="my-projects">
           <div className="project">

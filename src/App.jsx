@@ -4,6 +4,7 @@ import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
 import Experience from "./components/experience/Experience";
 import Footer from "./components/footer/Footer";
+import HorizontalRow from "./components/horizontalRow/HorizontalRow";
 import Intro from "./components/intro/Intro";
 import Menu from "./components/menu/Menu";
 import Navbar from "./components/navbar/Navbar";
@@ -26,7 +27,9 @@ function App() {
       />
       <Intro />
       <About />
+      <HorizontalRow />
       <Experience />
+      <HorizontalRow />
       <Projects />
       <Contact />
       <Footer />

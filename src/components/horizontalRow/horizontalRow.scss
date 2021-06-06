@@ -1,0 +1,15 @@
+@import "../../global.scss";
+
+.horizontal-row-container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100vw;
+  height: 2.5px;
+
+  .horizontal-row {
+    background-color: #212121;
+    height: 1px;
+    width: 95%;
+  }
+}
