@@ -11,10 +11,38 @@
   <h2>Dependencies</h2>
   <ul>
     <li>
-      <a href="https://www.npmjs.com/package/react-animate-on-scroll">React Animate On Scroll</a>
+      <a href="https://www.npmjs.com/package/react-animate-on-scroll">React Animate On Scroll</a> - For animations used on site
     </li>
-        <li>
-      <a href="https://www.npmjs.com/package/react-responsive-carousel">React Responsive Carousel</a>
+    <li>
+      <a href="https://www.npmjs.com/package/react-responsive-carousel">React Responsive Carousel</a> - For responsive carousel used on site
+    </li>
+    <li>
+      <a href="https://www.npmjs.com/package/gh-pages">gh-pages</a> - For deploying a React app to GitHub pages
     </li>
   </ul>
 </div>
+
+<div>
+  <h2>Running in Dev</h2>
+  <ol>
+    <li>
+      <p>Updates to the package.json requires the project to be rebuilt</p>
+      <pre>npm start</pre>
+    </li>
+  </ol>
+</div>
+
+<div>
+  <h2>Building and Deploying for Production</h2>
+  <ol>
+    <li>
+      <p>Updates to the package.json requires the project to be rebuilt</p>
+      <pre>npm run build</pre>
+    </li>
+    <li>
+      <p>To deploy the site</p>
+      <pre>npm run deploy</pre>
+    </li>
+  </ol>
+</div>
+
