@@ -19,7 +19,7 @@ export default function Experience() {
             Have a question? Want to chat?{" "}
             <span>
               <a
-                ariaLabel="Send Email Link"
+                aria-label="Send Email Link"
                 href={`mailto:ho.john2561@gmail.com`}
               >
                 Shoot me an email{" "}
@@ -29,7 +29,7 @@ export default function Experience() {
             <Link
               linkTo="https://www.linkedin.com/in/hojohn2561/"
               text="contact me on LinkedIn."
-              ariaLabel="LinkedIn Profile Link"
+              aria-label="LinkedIn Profile Link"
             />
           </h3>
         </ScrollAnimation>

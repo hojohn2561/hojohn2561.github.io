@@ -2,42 +2,23 @@ import React from "react";
 import "./menu.scss";
 
 import Resume from "./John Ho's Resume.pdf";
+import MenuItem from "./MenuItem";
 
 export default function Menu({ isMenuOpen, setIsMenuOpen }) {
   return (
     <div className={"menu " + (isMenuOpen && "active")}>
       <ul>
-        <li>
-          <a aria-label="Intro" href="#intro" onClick={setIsMenuOpen}>
-            Intro
-          </a>
-        </li>
-        <li>
-          <a aria-label="About" href="#about" onClick={setIsMenuOpen}>
-            About
-          </a>
-        </li>
-        <li>
-          <a aria-label="Experience" href="#experience" onClick={setIsMenuOpen}>
-            Experience
-          </a>
-        </li>
-        <li>
-          <a aria-label="Projects" href="#projects" onClick={setIsMenuOpen}>
-            Projects
-          </a>
-        </li>
-        <li>
-          <a aria-label="Contact" href="#contact" onClick={setIsMenuOpen}>
-            Contact
-          </a>
-        </li>
+        <MenuItem label="Intro" linkTo="#intro" onClick={setIsMenuOpen} />
+        <MenuItem label="About" linkTo="#about" onClick={setIsMenuOpen} />
+        <MenuItem
+          label="Experience"
+          linkTo="#experience"
+          onClick={setIsMenuOpen}
+        />
+        <MenuItem label="Projects" linkTo="#projects" onClick={setIsMenuOpen} />
+        <MenuItem label="Contact" linkTo="#contact" onClick={setIsMenuOpen} />
         {/* No need to close menu here because linking to page with resume */}
-        <li>
-          <a className="resumeLink" href={Resume}>
-            Resume
-          </a>
-        </li>
+        <MenuItem label="Resume" linkTo={Resume} />
       </ul>
     </div>
   );

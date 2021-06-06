@@ -9,6 +9,7 @@ export default function HorizontalRow() {
     <ScrollAnimation
       animateOnce
       animateIn="animate__animated animate__slideInLeft"
+      delay={250}
     >
       <div className="horizontal-row-container">
         <span className="horizontal-row" />

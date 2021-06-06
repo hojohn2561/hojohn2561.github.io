@@ -173,7 +173,7 @@ export default function Projects() {
       <ScrollAnimation
         animateOnce
         animateIn="animate__animated animate__slideInUp"
-        delay={500}
+        delay={250}
       >
         <div className="my-projects">
           <div className="project">
@@ -193,10 +193,11 @@ export default function Projects() {
                       <h4>
                         A cross-platform mobile app that allows you to track and
                         expand your trading card collection like never before.
-                        Simple ways to add and remove cards to and from your
-                        collection, add cards to your wishlist, get alerted when
-                        a card reaches your set price, view a card's price
-                        history, discover cards based on categories, and more.
+                        This app introduces simplified ways to add and remove
+                        cards to and from your collection, create a wishlist,
+                        get alerted when a card reaches a certain price, view a
+                        card's price history, discover cards based on
+                        categories, and more.
                       </h4>
                       <h4>Coming soon to Google Play and Apple App store.</h4>
                       <h4>

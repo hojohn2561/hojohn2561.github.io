@@ -48,7 +48,7 @@ const skills = [
 export default function About() {
   return (
     <div className="about-container" id="about">
-      <div className="about-me-intro-container">
+      <div className="about-me-container">
         <ScrollAnimation
           animateOnce
           animateIn="animate__animated animate__slideInLeft"
@@ -58,7 +58,7 @@ export default function About() {
         <ScrollAnimation
           animateOnce
           animateIn="animate__animated animate__slideInUp"
-          delay={500}
+          delay={250}
         >
           <div className="about-me-intro">
             <div className="about-me-paragraph-container">
@@ -69,16 +69,16 @@ export default function About() {
                 <Link
                   linkTo="https://www.upenn.edu/"
                   text="a prestigeous university"
-                  ariaLabel="University of Pennsylvania Link"
+                  aria-label="University of Pennsylvania Link"
                 />{" "}
                 and two at{" "}
                 <Link
                   linkTo="https://corporate.comcast.com/"
-                  text="a huge media conglomerates"
-                  ariaLabel="Comcast Link"
+                  text="a huge technology conglomerate"
+                  aria-label="Comcast Link"
                 />
                 , all of which gave me the opportunity to gain experience and
-                learn so much about front-end and back-end development!
+                learn so much about full stack development!
               </p>
             </div>
             <div className="headshot-container">
@@ -95,7 +95,7 @@ export default function About() {
           <ScrollAnimation
             animateOnce
             animateIn="animate__animated animate__slideInUp"
-            delay={500}
+            delay={250}
           >
             <h2>Skills</h2>
             <div className="skills-paragraph-container">

@@ -19,7 +19,7 @@ export default function footer() {
               alt="LinkedIn Logo"
             />
           }
-          ariaLabel="LinkedIn Profile Link"
+          aria-label="LinkedIn Profile Link"
         />
         <Link
           linkTo="https://github.com/hojohn2561/"
@@ -30,7 +30,7 @@ export default function footer() {
               alt="GitHub Logo"
             />
           }
-          ariaLabel="GitHub Profile Link"
+          aria-label="GitHub Profile Link"
         />
       </div>
     </div>

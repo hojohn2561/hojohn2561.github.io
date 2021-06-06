@@ -6,7 +6,7 @@
   flex-direction: column;
   padding: 4% 7%; // Top/bottom right/left
 
-  .about-me-intro-container {
+  .about-me-container {
     display: flex;
     flex-direction: column;
     width: 70%;
@@ -20,10 +20,10 @@
       .about-me-paragraph-container {
         color: $greyFontColor;
         width: 100%;
-        margin-bottom: 1rem; // Margins for spacing when headshot is to the right or flexed to below
+        margin-bottom: 1.5rem; // Margins for spacing when headshot is to the right or flexed to below
 
         @media screen and (min-width: 720px) {
-          margin-right: 5rem;
+          margin-right: 5%;
           width: 45%;
         }
 
@@ -40,7 +40,7 @@
 
           // Height/Width for responsive image sizing
           height: auto;
-          width: 80%;
+          width: 100%;
 
           &:hover {
             transform: scale(1.1);
@@ -52,12 +52,7 @@
     .skills {
       .skills-paragraph-container {
         color: $greyFontColor;
-        width: 100%;
-        margin-bottom: 1rem;
-
-        @media screen and (min-width: 720px) {
-          width: 90%;
-        }
+        margin-bottom: 1.5rem;
       }
 
       .skills-display {

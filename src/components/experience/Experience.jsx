@@ -13,7 +13,7 @@ const experiences = [
     responsibilities: [
       "Designed and developed a Google Action prototype that allowed users to schedule customizable meetings with their team members, using their voice",
       "Utilized and connected various Google APIs in order to provide a more personalized experience for the user when interacting with the Action",
-      "Created a mock-up of the Action being integrated into Comcast's existing Ruby app, with a fully functioning U.I. and existing Google Assistant features using Google's Dialogflow API",
+      "Created a fully-functioning demo of the Action being integrated into Comcast's existing Ruby app",
     ],
     logo: "assets/comcast business logo.png",
   },
@@ -23,7 +23,7 @@ const experiences = [
     employer: "Comcast",
     datesWorked: "April - September 2018",
     responsibilities: [
-      "Revamped the existing PCMS tool to improve efficiency by 90% and and support automating the process of generating configuration files for vCMTS deployments",
+      "Revamped the existing PCMS tool to improve efficiency by 90% and support automating the process of generating configuration files for vCMTS deployments",
       "Developed and maintained new PCMS tool front-end and back-end features to increase the NGAN team’s productivity and satisfied new rolling requirements discussed in meetings",
       "Automated the process of creating configuration files from templates and configlets for stakeholders",
     ],
@@ -55,7 +55,7 @@ export default function Experience() {
       <ScrollAnimation
         animateOnce
         animateIn="animate__animated animate__slideInUp"
-        delay={500}
+        delay={250}
       >
         <div className="my-experiences">
           {experiences.map((experience) => (
