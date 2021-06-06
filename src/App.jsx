@@ -18,11 +18,11 @@ function App() {
     <div className="app">
       <Navbar
         isMenuOpen={isMenuOpen}
-        setIsMenuOpen={() => setIsMenuOpen(!isMenuOpen)}
+        setIsMenuOpen={(updatedIsMenuOpen) => setIsMenuOpen(updatedIsMenuOpen)}
       />
       <Menu
         isMenuOpen={isMenuOpen}
-        onClick={() => setIsMenuOpen(!isMenuOpen)}
+        setIsMenuOpen={() => setIsMenuOpen(!isMenuOpen)}
       />
       <Intro />
       <About />

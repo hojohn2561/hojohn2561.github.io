@@ -15,18 +15,23 @@
   transition: all 0.5s ease; // Navbar color transition should be smooth
 
   .left-content {
-    padding-left: 2vw;
+    margin-left: 2vw;
 
     .logo {
+      color: white;
       cursor: pointer;
       font-size: 2.25rem;
       font-weight: 700;
       font-family: "Kaushan Script", cursive;
+
+      &:hover {
+        color: $primaryColor;
+      }
     }
   }
 
   .right-content {
-    padding-right: 2vw;
+    margin-right: 2vw;
 
     .menu-botton {
       display: flex;
@@ -41,8 +46,13 @@
         width: 100%;
         height: 3px;
         transform-origin: left; // So that transforms don't start from center/origin, they start on left. So can properly make the cross (X)
-        transition: all 0.5s ease; // So all transitions (transform rotate and opacity) takes 1 seconds
+        transition: transform 0.5s ease; // So all transitions (transform rotate and opacity) takes 1 seconds
       }
+    }
+
+    // Changing the css of the child. menu-button is the parent, span is the child. If active, on X hover, change the color to white
+    .menu-botton:hover span {
+      background-color: $primaryColor;
     }
   }
 
@@ -50,7 +60,14 @@
   &.active {
     // Color of navbar (background-color) and color of text changes
     background-color: $primaryColor;
-    color: $greyFontColor;
+
+    .logo {
+      color: $greyFontColor;
+
+      &:hover {
+        color: white;
+      }
+    }
 
     // Hamburger menu icon transforms into X, as well as changes color
     .menu-botton {
@@ -67,6 +84,11 @@
           transform: rotate(-40deg);
         }
       }
+    }
+
+    // Changing the css of the child. menu-button is the parent, span is the child. If active, on X hover, change the color to white
+    .menu-botton:hover span {
+      background-color: white;
     }
   }
 }

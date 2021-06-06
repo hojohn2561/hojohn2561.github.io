@@ -3,32 +3,32 @@ import "./menu.scss";
 
 import Resume from "./John Ho's Resume.pdf";
 
-export default function Menu({ isMenuOpen, onClick }) {
+export default function Menu({ isMenuOpen, setIsMenuOpen }) {
   return (
     <div className={"menu " + (isMenuOpen && "active")}>
       <ul>
         <li>
-          <a aria-label="Intro" href="#intro" onClick={onClick}>
+          <a aria-label="Intro" href="#intro" onClick={setIsMenuOpen}>
             Intro
           </a>
         </li>
         <li>
-          <a aria-label="About" href="#about" onClick={onClick}>
+          <a aria-label="About" href="#about" onClick={setIsMenuOpen}>
             About
           </a>
         </li>
         <li>
-          <a aria-label="Experience" href="#experience" onClick={onClick}>
+          <a aria-label="Experience" href="#experience" onClick={setIsMenuOpen}>
             Experience
           </a>
         </li>
         <li>
-          <a aria-label="Projects" href="#projects" onClick={onClick}>
+          <a aria-label="Projects" href="#projects" onClick={setIsMenuOpen}>
             Projects
           </a>
         </li>
         <li>
-          <a aria-label="Contact" href="#contact" onClick={onClick}>
+          <a aria-label="Contact" href="#contact" onClick={setIsMenuOpen}>
             Contact
           </a>
         </li>

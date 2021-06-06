@@ -4,12 +4,15 @@ import "./navbar.scss";
 export default function Navbar({ isMenuOpen, setIsMenuOpen }) {
   return (
     <div className={"navbar " + (isMenuOpen && "active")}>
-      <div className="left-content">
-        <div className="logo">JH</div>
+      {/* Menu should never open if logo is clicked */}
+      <div className="left-content" onClick={() => setIsMenuOpen(false)}>
+        <a href="#intro" className="logo">
+          JH
+        </a>
       </div>
 
       <div className="right-content">
-        <div className="menu-botton" onClick={setIsMenuOpen}>
+        <div className="menu-botton" onClick={() => setIsMenuOpen(!isMenuOpen)}>
           <span className="line1"></span>
           <span className="line2"></span>
           <span className="line3"></span>
