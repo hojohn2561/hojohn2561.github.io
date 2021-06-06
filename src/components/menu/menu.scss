@@ -9,7 +9,7 @@
   position: fixed;
   right: -100vw;
   transition: all 0.35s ease;
-  width: 100vw;
+  width: 99vw;
   z-index: 9; // Menu should appear above site content, but below navbar
 
   &.active {
@@ -19,7 +19,7 @@
 
   ul {
     color: $greyFontColor;
-    font-size: 2.5rem;
+    font-size: 3rem;
     list-style: none; // No dots
     margin: 0;
     padding: 0;

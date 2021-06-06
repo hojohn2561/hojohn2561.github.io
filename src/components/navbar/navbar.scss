@@ -6,16 +6,16 @@
   //  background-color: lightblue; // Color of the navbar, but will go with none here to make it transparent
   color: white; // Default color (for text) in the navbar (when not active, i.e., clicked on)
   display: flex;
-  height: 70px;
+  height: 7vh;
   justify-content: space-between; // Horizontal, should be even space between the content
   position: fixed; // Fix navbar position at top
   top: 0;
   width: 100vw; // Should go across the entire width of the screen
   z-index: 10; // Navbar should always be visible, so give it the highest z-index
-  transition: all 0.4s ease; // Navbar color transition should be smooth
+  transition: all 0.5s ease; // Navbar color transition should be smooth
 
   .left-content {
-    padding-left: 2%;
+    padding-left: 2vw;
 
     .logo {
       cursor: pointer;
@@ -26,7 +26,7 @@
   }
 
   .right-content {
-    padding-right: 2%;
+    padding-right: 2vw;
 
     .menu-botton {
       display: flex;
