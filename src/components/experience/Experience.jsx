@@ -1,4 +1,7 @@
 import React from "react";
+import ScrollAnimation from "react-animate-on-scroll";
+
+import "animate.css/animate.min.css";
 import "./experience.scss";
 
 const experiences = [
@@ -42,39 +45,50 @@ const experiences = [
 export default function Experience() {
   return (
     <div className="experiences-container" id="experience">
-      <h1>My Experience.</h1>
-      <div className="my-experiences">
-        {experiences.map((experience) => (
-          <div
-            className="experience-card-container"
-            key={`${experience.employer} ${experience.position}`}
-          >
-            <div className="experience-card">
-              <div className="experience-card-front">
-                <div className="experience-header">
-                  <h2>{experience.employer}</h2>
-                  <h3>{experience.position}</h3>
+      <ScrollAnimation
+        animateOnce
+        animateIn="animate__animated animate__slideInUp"
+      >
+        <h1>My Experience.</h1>
+      </ScrollAnimation>
+
+      <ScrollAnimation
+        animateOnce
+        animateIn="animate__animated animate__slideInUp"
+      >
+        <div className="my-experiences">
+          {experiences.map((experience) => (
+            <div
+              className="experience-card-container"
+              key={`${experience.employer} ${experience.position}`}
+            >
+              <div className="experience-card">
+                <div className="experience-card-front">
+                  <div className="experience-header">
+                    <h2>{experience.employer}</h2>
+                    <h3>{experience.position}</h3>
+                  </div>
+                  <h3 className="dates-worked">{experience.datesWorked}</h3>
+                  {/* <img src={experience.logo} alt="" className="experience-logo" /> */}
                 </div>
-                <h3 className="dates-worked">{experience.datesWorked}</h3>
-                {/* <img src={experience.logo} alt="" className="experience-logo" /> */}
-              </div>
-              <div className="experience-card-back">
-                <h3>Responsibilities</h3>
-                <ul className="responsibility-list">
-                  {experience.responsibilities.map((responsibilty, index) => (
-                    <li
-                      className="responsibilty"
-                      key={`${experience.employer} ${experience.position} ${index}`}
-                    >
-                      {responsibilty}
-                    </li>
-                  ))}
-                </ul>
+                <div className="experience-card-back">
+                  <h3>Responsibilities</h3>
+                  <ul className="responsibility-list">
+                    {experience.responsibilities.map((responsibilty, index) => (
+                      <li
+                        className="responsibilty"
+                        key={`${experience.employer} ${experience.position} ${index}`}
+                      >
+                        {responsibilty}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
+      </ScrollAnimation>
     </div>
   );
 }
