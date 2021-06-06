@@ -11,13 +11,19 @@ export default function Experience() {
         <h3>
           Have a question? Want to chat?{" "}
           <span>
-            <a href={`mailto:ho.john2561@gmail.com`}>Shoot me an email </a>
+            <a
+              ariaLabel="Send Email Link"
+              href={`mailto:ho.john2561@gmail.com`}
+            >
+              Shoot me an email{" "}
+            </a>
           </span>
           or{" "}
           <Link
             linkTo="https://www.linkedin.com/in/hojohn2561/"
             text="contact me on LinkedIn."
-          ></Link>
+            ariaLabel="LinkedIn Profile Link"
+          />
         </h3>
       </div>
     </div>

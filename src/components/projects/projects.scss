@@ -17,11 +17,13 @@
 
       .project-carousel {
         height: 33rem;
+        background-color: blue;
         // background-color: orchid;
 
         // Carousel dots depend on carousel item size, so make it bigger and actual content smaller to display dots outside of the content
         .carousel-item-container {
           height: 33rem;
+          background-color: green;
 
           .carousel-title-content {
             align-items: center;
@@ -39,7 +41,7 @@
 
               // Different phone image size depending on size of screen (this is for computer)
               @media screen and (min-width: 720px) {
-                width: 50%;
+                width: 40%; // Images takes other 50%
               }
 
               h2 {
@@ -52,7 +54,7 @@
                 color: $greyFontColor;
                 display: flex;
                 font-size: 1rem;
-                margin-top: 1rem;
+                margin-top: 1.25rem;
 
                 span {
                   background-color: white;

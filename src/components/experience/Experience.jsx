@@ -55,8 +55,8 @@ export default function Experience() {
                   <h2>{experience.employer}</h2>
                   <h3>{experience.position}</h3>
                 </div>
-                {/* <img src={experience.logo} alt="" className="experience-logo" /> */}
                 <h3 className="dates-worked">{experience.datesWorked}</h3>
+                {/* <img src={experience.logo} alt="" className="experience-logo" /> */}
               </div>
               <div className="experience-card-back">
                 <h3>Responsibilities</h3>

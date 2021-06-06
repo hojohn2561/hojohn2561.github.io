@@ -17,14 +17,14 @@ const projects = [
         demo: (
           <>
             <img
+              alt="TCG Assistant Regsiter Screenshot"
               className="phone-screenshot phone-1-2"
               src="assets/register.png"
-              alt=""
             />
             <img
+              alt="TCG Assistant Login Screenshot"
               className="phone-screenshot phone-2-2"
               src="assets/login.png"
-              alt=""
             />
           </>
         ),
@@ -36,34 +36,34 @@ const projects = [
         demo: (
           <>
             <img
+              alt="TCG Assistant Quick Add Screenshot"
               className="phone-screenshot diagonal-1"
               src="assets/quick add.png"
-              alt=""
             />
             <img
+              alt="TCG Assistant Quick Buttons Screenshot"
               className="phone-screenshot diagonal-2"
               src="assets/quick buttons.png"
-              alt=""
             />
             <img
+              alt="TCG Assistant Set Screenshot 2"
               className="phone-screenshot diagonal-6"
               src="assets/set screen 2.png"
-              alt=""
             />
             <img
+              alt="TCG Assistant Quick Remove Screenshot"
               className="phone-screenshot diagonal-4"
               src="assets/quick remove.png"
-              alt=""
             />
             <img
+              alt="TCG Assistant Collected Screenshot 1"
               className="phone-screenshot diagonal-3"
               src="assets/collected 1.png"
-              alt=""
             />
             <img
+              alt="TCG Assistant Set Screenshot 1"
               className="phone-screenshot diagonal-5"
               src="assets/set screen 1.png"
-              alt=""
             />
           </>
         ),
@@ -75,14 +75,14 @@ const projects = [
         demo: (
           <>
             <img
+              alt="TCG Assistant Price History Screenshot 1"
               className="phone-screenshot phone-1-2"
               src="assets/price history 1.png"
-              alt=""
             />
             <img
+              alt="TCG Assistant Price History Screenshot 2"
               className="phone-screenshot phone-2-2"
               src="assets/price history 2.png"
-              alt=""
             />
           </>
         ),
@@ -94,36 +94,34 @@ const projects = [
         demo: (
           <>
             <img
+              alt="TCG Assistant Alert Screenshot 1"
               className="phone-screenshot diagonal-1"
               src="assets/alert1.png"
-              alt=""
             />
             <img
+              alt="TCG Assistant Alert Screenshot 2"
               className="phone-screenshot diagonal-2"
               src="assets/alert2.png"
-              alt=""
             />
             <img
+              alt="TCG Assistant Set Screenshot 2"
               className="phone-screenshot diagonal-3"
               src="assets/set screen 2.png"
-              alt=""
-              height="650"
             />
             <img
+              alt="TCG Assistant Alert Screenshot 3"
               className="phone-screenshot diagonal-4"
               src="assets/alert3.png"
-              alt=""
-              height="650"
             />
             <img
+              alt="TCG Assistant Category Cards Screenshot 1"
               className="phone-screenshot diagonal-5"
               src="assets/category cards 1.png"
-              alt=""
             />
             <img
+              alt="TCG Assistant Set Screenshot 2"
               className="phone-screenshot diagonal-6"
               src="assets/set screen 1.png"
-              alt=""
             />
           </>
         ),
@@ -135,23 +133,19 @@ const projects = [
         demo: (
           <>
             <img
+              alt="TCG Assistant Discover Screenshot 1"
               className="phone-screenshot phone-1-3"
               src="assets/discover 1.png"
-              alt=""
-              width="400"
-              height="560"
             />
             <img
+              alt="TCG Assistant Discover Screenshot 2"
               className="phone-screenshot phone-2-3"
               src="assets/discover 2.png"
-              alt=""
             />
             <img
+              alt="TCG Assistant Discover Screenshot 3"
               className="phone-screenshot phone-3-3"
               src="assets/discover 3.png"
-              alt=""
-              width="400"
-              height="560"
             />
           </>
         ),

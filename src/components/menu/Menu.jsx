@@ -8,27 +8,27 @@ export default function Menu({ isMenuOpen, onClick }) {
     <div className={"menu " + (isMenuOpen && "active")}>
       <ul>
         <li>
-          <a href="#intro" onClick={onClick}>
+          <a aria-label="Intro" href="#intro" onClick={onClick}>
             Intro
           </a>
         </li>
         <li>
-          <a href="#about" onClick={onClick}>
+          <a aria-label="About" href="#about" onClick={onClick}>
             About
           </a>
         </li>
         <li>
-          <a href="#experience" onClick={onClick}>
+          <a aria-label="Experience" href="#experience" onClick={onClick}>
             Experience
           </a>
         </li>
         <li>
-          <a href="#projects" onClick={onClick}>
+          <a aria-label="Projects" href="#projects" onClick={onClick}>
             Projects
           </a>
         </li>
         <li>
-          <a href="#contact" onClick={onClick}>
+          <a aria-label="Contact" href="#contact" onClick={onClick}>
             Contact
           </a>
         </li>

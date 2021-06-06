@@ -10,7 +10,6 @@
     display: flex;
     flex-wrap: wrap; // To make responsive
     justify-content: space-around;
-    width: 100%;
 
     .experience-card-container {
       height: 19rem;
@@ -26,6 +25,7 @@
       }
 
       .experience-card {
+        background-color: green;
         position: relative;
         width: 100%;
         height: 100%;
@@ -37,8 +37,6 @@
           height: 100%;
           width: 100%;
           position: absolute;
-          padding-top: 0.5rem;
-          padding-bottom: 0.5rem;
           backface-visibility: hidden;
           -webkit-backface-visibility: hidden;
         }
@@ -50,16 +48,17 @@
 
           .experience-header {
             display: "flex";
-            height: 90%;
             flex-direction: "column";
           }
 
           .experience-logo {
-            height: 50%;
+            height: auto;
+            width: 100%;
             padding-bottom: 15%;
           }
 
           .dates-worked {
+            color: $greyFontColor;
             font-style: italic;
           }
         }

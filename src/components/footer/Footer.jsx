@@ -12,12 +12,26 @@ export default function footer() {
       <div className="icon-row-container">
         <Link
           linkTo="https://www.linkedin.com/in/hojohn2561/"
-          text={<img className="logo" src="assets/linkedin logo.png" alt="" />}
-        ></Link>
+          text={
+            <img
+              className="logo"
+              src="assets/linkedin logo.png"
+              alt="LinkedIn Logo"
+            />
+          }
+          ariaLabel="LinkedIn Profile Link"
+        />
         <Link
           linkTo="https://github.com/hojohn2561/"
-          text={<img className="logo" src="assets/github logo.png" alt="" />}
-        ></Link>
+          text={
+            <img
+              className="logo"
+              src="assets/github logo.png"
+              alt="GitHub Logo"
+            />
+          }
+          ariaLabel="GitHub Profile Link"
+        />
       </div>
     </div>
   );
