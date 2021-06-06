@@ -26,7 +26,7 @@
   <h2>Running in Dev</h2>
   <ol>
     <li>
-      <p>Updates to the package.json requires the project to be rebuilt</p>
+      <p>To run locally</p>
       <pre>npm start</pre>
     </li>
   </ol>
