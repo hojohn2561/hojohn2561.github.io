@@ -74,7 +74,7 @@ export default function About() {
                 and two at{" "}
                 <Link
                   linkTo="https://corporate.comcast.com/"
-                  text="one of the largest media conglomerates"
+                  text="a huge media conglomerates"
                   ariaLabel="Comcast Link"
                 />
                 , all of which gave me the opportunity to gain experience and
