@@ -28,6 +28,10 @@ const skills = [
     logo: "assets/java logo.png",
   },
   {
+    skill: "Node.js",
+    logo: "assets/node.svg",
+  },
+  {
     skill: "Git",
     logo: "assets/git logo.png",
   },
@@ -38,10 +42,6 @@ const skills = [
   {
     skill: "Sass",
     logo: "assets/sass logo.png",
-  },
-  {
-    skill: "Bootstrap",
-    logo: "assets/bootstrap logo.png",
   },
 ];
 
