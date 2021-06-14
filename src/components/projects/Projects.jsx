@@ -201,7 +201,7 @@ export default function Projects() {
                       </h4>
                       <h4>Coming soon to Google Play and Apple App store.</h4>
                       <h4>
-                        React <span /> Node.js <span /> Firebase
+                        React Native <span /> Node.js <span /> Firebase
                       </h4>
                     </div>
                   </div>

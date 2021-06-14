@@ -7,13 +7,13 @@ import "./experience.scss";
 const experiences = [
   {
     id: "comcast2",
-    position: "Business App Developer Co-op",
+    position: "App Developer Co-op",
     employer: "Comcast",
     datesWorked: "April - September 2019",
     responsibilities: [
-      "Designed and developed a Google Action prototype that allowed users to schedule customizable meetings with their team members, using their voice",
-      "Utilized and connected various Google APIs in order to provide a more personalized experience for the user when interacting with the Action",
-      "Created a fully-functioning demo of the Action being integrated into Comcast's existing Ruby app",
+      "Designed and developed a Google Assistant prototype app so users could schedule customizable meetings with their team members using their voice",
+      "Incorporated other APIs in Google’s ecosystem in order to provide a more personalized experience for the user when interacting with the app",
+      "Created a fully functioning mock-up of the app being integrated into Comcast’s existing Ruby app",
     ],
     logo: "assets/comcast business logo.png",
   },
@@ -23,9 +23,8 @@ const experiences = [
     employer: "Comcast",
     datesWorked: "April - September 2018",
     responsibilities: [
-      "Revamped the existing PCMS tool to improve efficiency by 90% and support automating the process of generating configuration files for vCMTS deployments",
-      "Developed and maintained new PCMS tool front-end and back-end features to increase the NGAN team’s productivity and satisfied new rolling requirements discussed in meetings",
-      "Automated the process of creating configuration files from templates and configlets for stakeholders",
+      "Revamped the NGAN team’s existing, but nonfunctioning, PCMS tool in order to automate the process of generating configuration files for vCMTS deployments, while improving its efficiency by 90%",
+      "Developed and maintained the PCMS tool’s front-end and back-end features while continuing to meet the rolling requirements discussed in meetings with the stakeholders",
     ],
     logo: "assets/comcast logo.png",
   },
@@ -35,8 +34,8 @@ const experiences = [
     employer: "University of Pennsylvania",
     datesWorked: "April - September 2017",
     responsibilities: [
-      "Designed and developed an automated script to output real-time technology usage data on people accessing UPenn’s services to allow for a more targeted software development approach",
-      "Performed penetration testing, regression testing, and usability testing on WebLogin to ensure successful deployments to the production environment",
+      "Designed and developed an automated script to parse real-time technology usage data and converting it to a Munin graph, allowing developers to have a more targeted software development approach",
+      "Performed penetration testing, regression testing, and usability testing on UPenn’s WebLogin to ensure successful deployments to the production environment",
       "Led UPenn’s effort to migrate from Cosign SSO to Shibboleth by automating the process of finding unused Cosign registrations and informing the service owners about the migration",
     ],
   },
