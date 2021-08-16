@@ -11,7 +11,7 @@ const projects = [
   {
     name: "Help Me Fish",
     description:
-      "A single-page web app that helps novice and experienced anglers in preparing for their next fishing trip built with ReactJS and Firebase.",
+      "A single-page web app that helps novice and experienced anglers in preparing for their next fishing trip built with React and Firebase.",
     githubLink: "https://github.com/hojohn2561/help-me-fish",
     projectLink: "https://help-me-fish.web.app",
   },

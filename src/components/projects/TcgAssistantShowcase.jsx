@@ -163,7 +163,7 @@ function Showcase(props) {
     <ScrollAnimation
       animateOnce
       animateIn="animate__animated animate__slideInUp"
-      delay={250}
+      delay={200}
     >
       <div className="showcase-container">
         <div className="project-container">

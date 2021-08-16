@@ -58,7 +58,7 @@ export default function About() {
         <ScrollAnimation
           animateOnce
           animateIn="animate__animated animate__slideInUp"
-          delay={250}
+          delay={200}
         >
           <div className="about-me-intro">
             <div className="about-me-paragraph-container">
@@ -95,7 +95,7 @@ export default function About() {
           <ScrollAnimation
             animateOnce
             animateIn="animate__animated animate__slideInUp"
-            delay={250}
+            delay={200}
           >
             <h2>Skills</h2>
             <div className="skills-paragraph-container">

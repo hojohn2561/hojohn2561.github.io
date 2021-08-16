@@ -12,7 +12,7 @@ function ProjectCard({ project }) {
     <ScrollAnimation
       animateOnce
       animateIn="animate__animated animate__slideInUp"
-      delay={250}
+      delay={200}
     >
       <div className="project-card-container">
         <h2>{name}</h2>

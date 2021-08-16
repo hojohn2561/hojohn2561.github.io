@@ -49,7 +49,7 @@ export default function Experience() {
       <ScrollAnimation
         animateOnce
         animateIn="animate__animated animate__slideInUp"
-        delay={250}
+        delay={200}
       >
         <div className="my-experiences">
           {experiences.map((experience) => (
