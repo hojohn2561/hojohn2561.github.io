@@ -1,0 +1,40 @@
+@import "../../global.scss";
+
+.project-card-container {
+  background: linear-gradient(#116799, #1488cc);
+  color: white;
+  display: flex;
+  flex-flow: column;
+  height: 20rem;
+  padding: 1.5rem;
+  transition: all 0.4s ease;
+  width: 20rem;
+  // So that padding doesn't affect div width/height.
+  // This will force the browser to calculate the width according to the
+  // "outer"-width of the div, it means the padding will be subtracted from the width.
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  .technologies-used {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-grow: 1;
+  }
+
+  .link-icon {
+    height: 1.5rem;
+  }
+
+  &:hover {
+    color: $greyFontColor;
+    transform: scale(1.1);
+
+    // To override the global h2 style defined in app.scss
+    h2 {
+      transition: all 0.4s ease;
+      color: $greyFontColor;
+    }
+  }
+}

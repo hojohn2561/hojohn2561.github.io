@@ -4,8 +4,6 @@ import ExperienceCardBack from "./ExperienceCardBack";
 import ExperienceCardFront from "./ExperienceCardFront";
 import FlipCard from "./../common/FlipCard";
 
-import "./experienceCard.scss";
-
 function ExperienceCard({ experience }) {
   const { datesWorked, employer, logo, position, description } = experience;
 
