@@ -1,0 +1,21 @@
+.back {
+  background: linear-gradient(#1f252d, #24282d);
+  backface-visibility: hidden;
+  color: white;
+  height: 100%;
+  padding: 1rem;
+  transform: rotateY(180deg); // So that content isn't displayed in reverse
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  // So that padding doesn't affect div width/height.
+  // This will force the browser to calculate the width according to the
+  // "outer"-width of the div, it means the padding will be subtracted from the width.
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: auto;
+
+  p {
+    margin-top: 1rem;
+  }
+}

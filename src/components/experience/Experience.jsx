@@ -1,6 +1,8 @@
 import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 
+import ExperienceCard from "./ExperienceCard";
+
 import "animate.css/animate.min.css";
 import "./experience.scss";
 
@@ -10,11 +12,8 @@ const experiences = [
     position: "App Developer Co-op",
     employer: "Comcast",
     datesWorked: "April - September 2019",
-    responsibilities: [
-      "Designed and developed a Google Assistant prototype app so users could schedule customizable meetings with their team members using their voice",
-      "Incorporated other APIs in Google’s ecosystem in order to provide a more personalized experience for the user when interacting with the app",
-      "Created a fully functioning mock-up of the app being integrated into Comcast’s existing Ruby app",
-    ],
+    description:
+      "My main project during this co-op was to develop a Google Action prototype that would allow my co-workers to schedule meetings with their team members using their voice. The Action was to incorporate various APIs offered in Google's ecosystem so that it could provide a more personalized, connected experience for the user. In addition to being able to schedule a meeting by talking to the Google smart device, the meeting invite would then be added to the user’s calendar, an invite be sent to all the attendees, and they would also be reminded 15 minutes before the meeting started.",
     logo: "assets/comcast business logo.png",
   },
   {
@@ -22,10 +21,8 @@ const experiences = [
     position: "Software Engineer Co-op",
     employer: "Comcast",
     datesWorked: "April - September 2018",
-    responsibilities: [
-      "Revamped the NGAN team’s existing, but nonfunctioning, PCMS tool in order to automate the process of generating configuration files for vCMTS deployments, while improving its efficiency by 90%",
-      "Developed and maintained the PCMS tool’s front-end and back-end features while continuing to meet the rolling requirements discussed in meetings with the stakeholders",
-    ],
+    description:
+      "My main project during this co-op was to 'bring back to life' the team's existing PCMS tool, which was barely functioning when I first got there. Its purpose was to be able to generate configuration files when given an Excel sheet containing hundreds of IP Address data, but it wasn’t even able to do that. In the end, I was able to provide that functionality while improving its efficiency by 90%, as well as modernize its user interface. Throughout my time there, I developed and maintained its core features (front-end and back-end).",
     logo: "assets/comcast logo.png",
   },
   {
@@ -33,11 +30,9 @@ const experiences = [
     position: "Programmer Analyst Co-op",
     employer: "University of Pennsylvania",
     datesWorked: "April - September 2017",
-    responsibilities: [
-      "Designed and developed an automated script to parse real-time technology usage data and converting it to a Munin graph, allowing developers to have a more targeted software development approach",
-      "Performed penetration testing, regression testing, and usability testing on UPenn’s WebLogin to ensure successful deployments to the production environment",
-      "Led UPenn’s effort to migrate from Cosign SSO to Shibboleth by automating the process of finding unused Cosign registrations and informing the service owners about the migration",
-    ],
+    description:
+      "During my time at this co-op, I mainly automated scripts that my team used, and other small projects since this was my first experience in the field. However, a project came up where I was able to design and develop an automated script that converted real-time technology usage data on people accessing UPenn's services to a real-time Munin graph, so that the data could be visualized and easily interpreted by others. This allowed the developers to have a more targeted approach in their software development depending on which technologies were used most often.",
+    logo: "assets/upenn.svg",
   },
 ];
 
@@ -58,34 +53,10 @@ export default function Experience() {
       >
         <div className="my-experiences">
           {experiences.map((experience) => (
-            <div
-              className="experience-card-container"
+            <ExperienceCard
+              experience={experience}
               key={`${experience.employer} ${experience.position}`}
-            >
-              <div className="experience-card">
-                <div className="experience-card-front">
-                  <div className="experience-header">
-                    <h2>{experience.employer}</h2>
-                    <h3>{experience.position}</h3>
-                  </div>
-                  <h3 className="dates-worked">{experience.datesWorked}</h3>
-                  {/* <img src={experience.logo} alt="" className="experience-logo" /> */}
-                </div>
-                <div className="experience-card-back">
-                  <h3>Responsibilities</h3>
-                  <ul className="responsibility-list">
-                    {experience.responsibilities.map((responsibilty, index) => (
-                      <li
-                        className="responsibilty"
-                        key={`${experience.employer} ${experience.position} ${index}`}
-                      >
-                        {responsibilty}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            </div>
+            />
           ))}
         </div>
       </ScrollAnimation>

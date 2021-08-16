@@ -1,0 +1,25 @@
+.front {
+  background: linear-gradient(#116799, #1488cc);
+  backface-visibility: hidden;
+  height: 100%;
+  text-align: center;
+  padding: 1rem;
+  position: absolute;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  // So that padding doesn't affect div width/height.
+  // This will force the browser to calculate the width according to the
+  // "outer"-width of the div, it means the padding will be subtracted from the width.
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  .dates-worked {
+    font-style: italic;
+  }
+
+  .experience-logo {
+    margin-top: 1.5rem;
+    height: 35%;
+  }
+}

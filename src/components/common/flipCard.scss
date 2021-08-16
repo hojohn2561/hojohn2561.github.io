@@ -1,0 +1,11 @@
+.card-container {
+  height: 23rem;
+  margin: 1rem;
+  width: 23rem;
+  transition: transform 0.75s;
+  transform-style: preserve-3d;
+
+  &:hover {
+    transform: rotateY(180deg);
+  }
+}
