@@ -36,7 +36,7 @@
   <h2>Building and Deploying for Production</h2>
   <ol>
     <li>
-      <p>Updates to the package.json requires the project to be rebuilt</p>
+      <p>Updates to the package.json, as well as updates to static files (like the resume), require the project to be rebuilt</p>
       <pre>npm run build</pre>
     </li>
     <li>
